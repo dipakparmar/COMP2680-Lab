@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/mystyle.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/myslider.css" />
-    <link rel="javascript" type="text/js" href="./assets/js/script.js">
+    <style>
+        .column-50{
+        margin-top:33px;
+    }
+    </style>
+    <script src="./assets/js/script.js"></script>
 </head>
 
 <body>
@@ -22,7 +26,7 @@
         <!-- Header Start -->
         <div class="Header">
 
-            <h2 class="title set-center top-animation-comingin">TRU Leap Program</h2>
+            <h1 class="title set-center top-animation-comingin">TRU Leap Program</h1>
             <p class="set-center top-animation-comingin">Explore Canada while you study!</p>
 
         </div>
@@ -36,57 +40,182 @@
                     <i class="fas fa-bars"></i>
                 </span>
                 <a href="#" class="logo">
-                    <im</a> <ul class="main-nav" id="js-menu">
-                        <li>
-                            <a href="./index.html" class="nav-links">Home</a>
-                        </li>
-                        <li>
-                            <a href="./events.html" class="nav-links">Events</a>
-                        </li>
-                        <li>
-                            <a href="./about.html" class="nav-links">About Us</a>
-                        </li>
-                        <li>
-                            <a href="./contact.html" class="nav-links">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href=".blog.html" class="nav-links">Blog</a>
-                        </li>
-                        </ul>
+                </a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="./index.html" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="./events.html" class="nav-links">Events</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="nav-links">About Us</a>
+                    </li>
+                    <li class="active-nav">
+                        <a href="./contact.html" class="nav-links">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html" class="nav-links">Blog</a>
+                    </li>
+                </ul>
             </nav>
 
         </div>
         <!-- Navigation End -->
-        <h2>
-            Leisure Exploration Activity Program (LEAP)
-        </h2>
 
-        <p>
-            LEAP is the new acronym for ISAP. LEAP stands for Leisure Explore Activity Program and replaces
-            International
-            Student Activity Program. The new name reflects the evolution of the program to be inclusive of all
-            students on
-            campus and when space is available, staff and faculty are welcome to join in.
-        </p>
+        <!-- Content Start -->
+        <div class="main-content fullscreenover">
+
+            <div class="container-contact">
+                <div style="text-align:center">
+                    <h2>Contact Us</h2>
+                    <p>Swing by for a ticket quick question, or leave us a message:</p>
+                </div>
+            </div>
+            <div class="fullscreenover" id="googleMap" style="width:100%;height:370px; margin-bottom:0; padding:0;"></div>
+            <div class="row">
+                <div class="column-50">
+                    <h2 class="titletext">Meet us at</h2>
+                    <table>
+                        <tr>
+                            <td style="vertical-align:top; text-align:right;" >Address : <i class="fas fa-map-pin"></i></td>
+                            <td>LEAP desk</br>International Building (IB1004, beside the elevator),</br>Thompson Rivers
+                                University</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:top; text-align:right;">Email : <i class="fas fa-envelope"></i></td>
+                            <td>Jillian at <a href="mailto:TRULeap@gmail.com" >TRULeap@gmail.com</a> </td>
+                        </tr>
+                        <tr> 
+                            <td>Social Media : <i class="fas fa-facebook-f"></i></td>
+                            <td><a href="https://www.facebook.com/leapTRU" target="_new">Follow us on Facebook</a></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="column-50">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" class="myinput" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" class="myinput" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <select id="country" class="myinput" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" class="mytextarea round-border" placeholder="Write something.." style="height:170px"></textarea>
+                        <input type="submit" class="button-ds1 gradient-button" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+
+            <script>
+                function initMap() {
+                    var address = 'Thompson Rivers University, Kamloops, BC, CA';
+
+                    var map = new google.maps.Map(document.getElementById('googleMap'), {
+                        zoom: 14
+                    });
+
+
+                    // this content goes in the info window
+                    var contentString = '<div id="content">' +
+                        '<h1 id="mapHeading">Site Title</h1>' +
+                        '<div id="infoContent">' +
+                        '<address>Kamloops, <br>British Columbia, CA  </address>' +
+                        '<a class="directions" href="https://www.google.com/maps/place/' + address +
+                        '">Get Directions</a>' +
+                        '</div>';
+
+                    // init infowindow
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+
+                    var geocoder = new google.maps.Geocoder();
+                    geocoder.geocode({
+                            'address': address
+                        },
+
+                        function (results, status) {
+                            if (status == google.maps.GeocoderStatus.OK) {
+                                new google.maps.Marker({
+                                    position: results[0].geometry.location,
+                                    map: map
+                                });
+                                map.setCenter(results[0].geometry.location);
+
+                                // add marker to map
+                                var marker = new google.maps.Marker({
+                                    position: results[0].geometry.location,
+                                    map: map,
+                                    icon: '/assets/images/sparks-map-icon.png'
+                                });
+
+                                // open infowindow
+                                marker.addListener('click', function () {
+                                    infowindow.open(map, marker);
+                                });
+                            }
+                        });
+                }
+            </script>
+
+            <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8CkImPCzS6bPRzCfD5zBXa0-QwT7PpeM&callback=initMap"></script>
+        </div>
+        <!-- Content End -->
+
 
         <!-- Footer Start -->
-        <div class="Footer1">
-                Text
+        <div class="footer">
+                <div class="column-25 set-center">
+                    <img class="logo-footer" src="https://www.tru.ca/__shared/templates/2016/images/truLogo-reverse.png"
+                        alt="Thompson Rivers University">
+                    <p style="font-variant-caps: titling-caps; font-weight: bold; color: #003e51">TRU LEAP by TRU World
+                    </p>
+                </div>
+                <div class="column-25">
+                    <p class="titletext15">Meet us at </p>
+                    <p class="footer-text">International Building (IB1004, beside the elevator),</br>Thompson Rivers
+                        University
+                    </p>
+                </div>
+                <div class="column-25">
+                    <p class="titletext15">Follow us</p>
+                    <p class="footer-text"><a style="text-decoration: none; font-weight: bolder;" href="https://www.facebook.com/leapTRU"
+                            target="_new">Facebook</a>
+                    </p>
+                </div>
+                <div class="column-25">
+                    <p class="titletext15">Email us </p>
+                    <p class="footer-text"><a style="text-decoration: none; font-weight: bolder;" href="mailto:TRULeap@gmail.com">
+                            <i class="fas fa-envelope"></i>TRULeap@gmail.com</a>
+                        </br>
+                    </br>
+                    </p>
+                </div>
+                </br>
+                </br>
+                </br>
+                </br>
+                <div class="set-center footer-copy">
+                    <p style="padding: 5px;">Copyright &copy; 2018 Thompson Rivers University | All Rights Reserved.</p>
+                </div>
+    
             </div>
-            <div class="Footer2">
-                TExt
-            </div>
-            <div class="Footer3">
-                TExt
-            </div>
-            <div class="Footer4">
-                Ttext
-            </div>
+    
             <!-- Footer End -->
-    
-        </div>
-        <!-- Container End -->
-    
-    </body>
-    
-    </html>
+
+    </div>
+    <!-- Container End -->
+
+    <script>
+            var active_menu = "Contact";
+        </script>
+</body>
+
+</html>
