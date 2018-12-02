@@ -67,6 +67,8 @@ body,
   padding: 0;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 350px;
+ 
 }
 
 .NewsLetterSignup {
@@ -84,6 +86,7 @@ body,
   left: 0;
   bottom: 0;
   width: 100%;
+  position: relative;
 
 }
 
@@ -130,6 +133,13 @@ body,
 
 .active {
   display: block;
+}
+
+.activemenu{
+  color: rgba(255, 255, 255, 1);
+    border-bottom: #22ffe2 solid;
+    text-shadow: 0px 1px 6px white;
+
 }
 
 .navbar-toggle {
