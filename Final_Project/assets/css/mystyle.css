@@ -226,7 +226,6 @@ body,
 
 .gradient-button {
   margin: 10px;
-  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
   padding: 15px;
   text-align: center;
@@ -360,6 +359,12 @@ textarea {
 
 
 }
+.column-70 {
+  float: right;
+  width: 73%;
+  margin-top: 6px;
+  padding: 15px;
+}
 
 .footer-copy {
   float: center;
@@ -377,6 +382,42 @@ textarea {
   content: "";
   display: table;
   clear: both;
+}
+.borderd-box{
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .12); 
+  transition: all 300ms ease-out;
+}
+
+.hidden{
+  display:none;
+}
+
+.btnds2{
+  display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 1.5rem;
+    color: #424242;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 2px;
+    transition: all .3s ease-out;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */

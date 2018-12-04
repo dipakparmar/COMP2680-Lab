@@ -60,7 +60,12 @@
 
         <!-- Content Start -->
         <div class="main-content fullscreenover">
-
+            
+<form method="" id="cartform" onsubmit="confirmpay()">
+        <h2>Total Value : <span id="totalm"></span></h2>
+        <input value="$0.00" readonly="readonly" type="text" id="total"/>
+        <input class="btnds2" style="background-color: #03a9f4; color:white;" value="Submit" type="submit"/>
+                    <input class="btnds2" style="background-color: #03a9f4; color:white;" value="Reset" type="reset"/>
             <div class="row">
                 <div class="column-50">
                     <div class="card-media">
@@ -76,7 +81,7 @@
                                 MEZZANINE SF</span>
                             <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
                             <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                         </div>
                     </div>
 
@@ -93,7 +98,7 @@
                                 MEZZANINE SF</span>
                             <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
                             <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                         </div>
                     </div>
 
@@ -110,7 +115,7 @@
                                 MEZZANINE SF</span>
                             <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
                             <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                         </div>
                     </div>
 
@@ -128,7 +133,7 @@
                                 MEZZANINE SF</span>
                             <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
                             <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                         </div>
                     </div>
 
@@ -145,7 +150,7 @@
                                 MEZZANINE SF</span>
                             <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
                             <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -162,8 +167,8 @@
                                     His Legacy at
                                     MEZZANINE SF</span>
                                 <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                                <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $34.3</span>
+                                <input name="event" value="34.3" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                             </div>
                         </div>
     
@@ -179,8 +184,8 @@
                                     His Legacy at
                                     MEZZANINE SF</span>
                                 <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                                <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $12.54</span>
+                                <input name="event" value="12.54" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                             </div>
                         </div>
     
@@ -196,8 +201,8 @@
                                     His Legacy at
                                     MEZZANINE SF</span>
                                 <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                                <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $12.50</span>
+                                <input name="event" value="12.50" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                             </div>
                         </div>
     
@@ -214,8 +219,8 @@
                                     His Legacy at
                                     MEZZANINE SF</span>
                                 <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                                <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $90</span>
+                                <input name="event" value="90.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                             </div>
                         </div>
     
@@ -231,12 +236,19 @@
                                     His Legacy at
                                     MEZZANINE SF</span>
                                 <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                                <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">VIEW TICKETS</a>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30.95</span>
+                                <input name="event" value="30.95" type="checkbox" id="t1" onClick="totalcartprice()"/> <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                             </div>
                         </div>
                     </div>
+                    <input value="Submit" type="submit"/>
+                    <input value="Reset" type="reset"/>
             </div>
+        </form>
+
+    
+       
+        
 
         </div>
         <!-- Content End -->
@@ -288,6 +300,28 @@
 
     <script>
         var active_menu = "Events";
+
+        var total = 0;
+        function totalcartprice()
+        {
+        var input = document.getElementsByName("event");
+
+        
+        for (var i = 0; i < input.length; i++) {
+        if (input[i].checked) {
+        total += parseFloat(input[i].value);
+        }
+        }
+
+        document.getElementById("total").value = "$" + total.toFixed(2);
+        //alert("Your total cart value is "+totalvalue+ "</br> Do you want to confirm and pay ?")
+    
+        }
+        var totalvalue= document.getElementById("total").value = "$" + total.toFixed(2);
+        function confirmpay()
+        {
+            confirm("Do you want to confirm and pay ?");
+        }
     </script>
 
 </body>

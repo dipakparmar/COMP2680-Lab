@@ -42,8 +42,7 @@ if(active_menu == "Blog")
     
 }
 
-
-
-
-
 }
+
+
+   
