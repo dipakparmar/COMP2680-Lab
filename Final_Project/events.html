@@ -2,12 +2,23 @@
 <html>
 
 <head>
-    <title>My WebSite</title>
+    <title></title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dipak Parmar,Thompson Rivers University, www.tru.ca">
+    <meta name="og:url" content="http://www.tru.ca/">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Thompson Rivers University">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@mytru">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.tru.ca/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.tru.ca/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.tru.ca/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://www.tru.ca/manifest.json">
+    <link rel="mask-icon" href="https://www.tru.ca/safari-pinned-tab.svg" color="#003e51">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="keywords" content="TRU LEAP" />
+    <meta name="description" content="TRU LEAP by TRU World" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/mystyle.css" />
@@ -60,195 +71,234 @@
 
         <!-- Content Start -->
         <div class="main-content fullscreenover">
-            
-<form method="" id="cartform" onsubmit="confirmpay()">
-        <h2>Total Value : <span id="totalm"></span></h2>
-        <input value="$0.00" readonly="readonly" type="text" id="total"/>
-        <input class="btnds2" style="background-color: #03a9f4; color:white;" value="Submit" type="submit"/>
-                    <input class="btnds2" style="background-color: #03a9f4; color:white;" value="Reset" type="reset"/>
-            <div class="row">
-                <div class="column-50">
-                    <div class="card-media">
-                        <div class="card-media-object-container">
-                            <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
 
+            <form method="" id="cartform" onsubmit="confirmpay()">
+                <h2>Total Value : <span id="totalm"></span></h2>
+                <input value="$0.00" readonly="readonly" type="text" id="total" />
+                <input class="btnds2" style="background-color: #03a9f4; color:white;" value="Submit" type="submit" />
+                <input class="btnds2" style="background-color: #03a9f4; color:white;" value="Reset" type="reset" />
+                <div class="row">
+                    <div class="column-50">
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $10</span>
+                                <input name="event" value="10" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
                             </div>
                         </div>
-                        <div>
-                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                            <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                His Legacy at
-                                MEZZANINE SF</span>
-                            <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                            <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $5</span>
+                                <input name="event" value="5" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
+                        </div>
+
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $65</span>
+                                <input name="event" value="65" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $43</span>
+                                <input name="event" value="43" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
+                        </div>
+
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $19.95</span>
+                                <input name="event" value="19.95" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-50">
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $34.3</span>
+                                <input name="event" value="34.3" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
+                        </div>
+
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $12.54</span>
+                                <input name="event" value="12.54" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
+                        </div>
+
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $12.50</span>
+                                <input name="event" value="12.50" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $90</span>
+                                <input name="event" value="90.95" type="checkbox" id="t1" onClick="totalcartprice()" /><a
+                                    href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
+                        </div>
+
+                        <div class="card-media">
+                            <div class="card-media-object-container">
+                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
+
+                                </div>
+                            </div>
+                            <div>
+                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
+                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince
+                                    and
+                                    His Legacy at
+                                    MEZZANINE SF</span>
+                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco,
+                                    CA</span>
+                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash;
+                                    $30.95</span>
+                                <input name="event" value="30.95" type="checkbox" id="t1" onClick="totalcartprice()" />
+                                <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card-media">
-                        <div class="card-media-object-container">
-                            <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-
-                            </div>
-                        </div>
-                        <div>
-                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                            <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                His Legacy at
-                                MEZZANINE SF</span>
-                            <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                            <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                        </div>
-                    </div>
-
-                    <div class="card-media">
-                        <div class="card-media-object-container">
-                            <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-
-                            </div>
-                        </div>
-                        <div>
-                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                            <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                His Legacy at
-                                MEZZANINE SF</span>
-                            <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                            <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                        </div>
-                    </div>
-
-
-                    <div class="card-media">
-                        <div class="card-media-object-container">
-                            <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-
-                            </div>
-                        </div>
-                        <div>
-                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                            <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                His Legacy at
-                                MEZZANINE SF</span>
-                            <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                            <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                        </div>
-                    </div>
-
-                    <div class="card-media">
-                        <div class="card-media-object-container">
-                            <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-
-                            </div>
-                        </div>
-                        <div>
-                            <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                            <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                His Legacy at
-                                MEZZANINE SF</span>
-                            <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                            <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30</span>
-                            <input name="event" value="12.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                        </div>
-                    </div>
                 </div>
-                <div class="column-50">
-                        <div class="card-media">
-                            <div class="card-media-object-container">
-                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-    
-                                </div>
-                            </div>
-                            <div>
-                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                    His Legacy at
-                                    MEZZANINE SF</span>
-                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $34.3</span>
-                                <input name="event" value="34.3" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                            </div>
-                        </div>
-    
-                        <div class="card-media">
-                            <div class="card-media-object-container">
-                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-    
-                                </div>
-                            </div>
-                            <div>
-                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                    His Legacy at
-                                    MEZZANINE SF</span>
-                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $12.54</span>
-                                <input name="event" value="12.54" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                            </div>
-                        </div>
-    
-                        <div class="card-media">
-                            <div class="card-media-object-container">
-                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-    
-                                </div>
-                            </div>
-                            <div>
-                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                    His Legacy at
-                                    MEZZANINE SF</span>
-                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $12.50</span>
-                                <input name="event" value="12.50" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                            </div>
-                        </div>
-    
-    
-                        <div class="card-media">
-                            <div class="card-media-object-container">
-                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-    
-                                </div>
-                            </div>
-                            <div>
-                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                    His Legacy at
-                                    MEZZANINE SF</span>
-                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $90</span>
-                                <input name="event" value="90.95" type="checkbox" id="t1" onClick="totalcartprice()"/><a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                            </div>
-                        </div>
-    
-                        <div class="card-media">
-                            <div class="card-media-object-container">
-                                <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);">
-    
-                                </div>
-                            </div>
-                            <div>
-                                <span class="subtle">Mon, APR 09, 7:00 PM</span>
-                                <span class="card-media-body-heading">This Thing Called Life: A Celebration of Prince and
-                                    His Legacy at
-                                    MEZZANINE SF</span>
-                                <span class="card-media-body-supporting-bottom-text subtle">Mezzanine, San Francisco, CA</span>
-                                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Fee &ndash; $30.95</span>
-                                <input name="event" value="30.95" type="checkbox" id="t1" onClick="totalcartprice()"/> <a href="#/" class="card-media-body-supporting-bottom-text card-media-link">Get Ticket</a>
-                            </div>
-                        </div>
-                    </div>
-                    <input value="Submit" type="submit"/>
-                    <input value="Reset" type="reset"/>
-            </div>
-        </form>
+            </form>
 
-    
-       
-        
+
+
+
 
         </div>
         <!-- Content End -->
@@ -297,29 +347,29 @@
 
     </div>
     <!-- Container End -->
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87315467-6"></script>
     <script>
         var active_menu = "Events";
 
-        var total = 0;
-        function totalcartprice()
-        {
-        var input = document.getElementsByName("event");
 
-        
-        for (var i = 0; i < input.length; i++) {
-        if (input[i].checked) {
-        total += parseFloat(input[i].value);
-        }
-        }
+        function totalcartprice() {
+            var input = document.getElementsByName("event");
 
-        document.getElementById("total").value = "$" + total.toFixed(2);
-        //alert("Your total cart value is "+totalvalue+ "</br> Do you want to confirm and pay ?")
-    
+            var total = 0;
+            for (var i = 0; i < input.length; i++) {
+                if (input[i].checked) {
+                    total += parseFloat(input[i].value);
+                }
+            }
+
+            document.getElementById("total").value = "$" + total.toFixed(2);
+            //alert("Your total cart value is "+totalvalue+ "</br> Do you want to confirm and pay ?")
+
         }
-        var totalvalue= document.getElementById("total").value = "$" + total.toFixed(2);
-        function confirmpay()
-        {
+        var totalvalue = document.getElementById("total").value = "$" + total.toFixed(2);
+
+        function confirmpay() {
             confirm("Do you want to confirm and pay ?");
         }
     </script>

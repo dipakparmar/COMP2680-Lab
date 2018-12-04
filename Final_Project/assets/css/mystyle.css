@@ -420,14 +420,20 @@ textarea {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
 }
 
+.u-float-right{
+  font-weight:bolder;
+  
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
   .column-50,
   .column-25,
-  input[type=submit] {
+  input[type=submit], input[type=reset] {
     width: 100%;
     margin-top: 0;
   }
 
 }
+
